@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <link rel="stylesheet" href="./quiz_page.css">
+</head>
+<body>
+    <div class="bar login-bar hide" id="login-bar">
+        <h1 class="name" id="username"></h1>
+        <button class="btn dashboard-btn" id="dashboard">dashboard</button>
+        <button class="btn logout-btn" id="logout">logout</button>
+    </div>
+
+    <button class="startup" onclick="startQuiz()">Start Quiz</button>
+    <div id="timer" class="timer hide"><span id="time">00 : 00</span></div>
+    <div id="blurred-content" class="blur">
+        <main class="container">
+            <section class="quiz">
+                <div class="heading">
+                    <p class="title" id="quiz-title">Quiz</p>
+                </div>
+
+                <div class="result hide" id="result">
+                    <p></p>
+                    <p class="reload">
+                        <button onclick="reloadPage()">Try Again?</button>
+                    </p>
+                </div>
+                <form class="quiz-form">
+                    <section id="quiz-container">
+                        
+                    </section>
+                    <div class="submit">
+                        <input type="submit" value="Submit" class="blur" id="submit-button">
+                    </div>
+                </form>
+            </section>
+        </main>
+    </div>
+
+    <script src="./quiz_page.js"></script>
+</body>
+</html>

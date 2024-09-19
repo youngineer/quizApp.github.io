@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+
+:root {
+    --primary-color: #3E64FF;
+    --secondary-color: #5EDFFF;
+    --tertiary-color: #B2FCFF;
+    --background-color: #ECFCFF;
+    --text-color: #333333;
+    --box-shadow: 0 4px 6px rgba(62, 100, 255, 0.1);
+}
+
+body {
+    font-family: "SUSE", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: var(--text-color);
+}
+
+.bar {
+    background-color: var(--primary-color);
+    box-shadow: var(--box-shadow);
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-bar {
+    margin-bottom: 2rem;
+    background-color: var(--secondary-color);
+}
+
+.name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #3E64FF;
+    margin: 0;
+}
+
+.btn {
+    font-family: "SUSE", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.logout-btn {
+    background-color: white;
+    color: var(--primary-color);
+}
+
+.logout-btn:hover {
+    background-color: var(--tertiary-color);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.box {
+    aspect-ratio: 1 / 1;
+    background-color: white;
+    border: none;
+    border-radius: 12px;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.box:hover {
+    box-shadow: 0 6px 12px rgba(62, 100, 255, 0.2);
+    background-color: var(--tertiary-color);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#quizzes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.box {
+    width: 200px;
+    height: 150px;
+    margin: 10px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#pagination-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination-btn {
+    font-family: "SUSE", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 4px;
+}
+
+.pagination-btn.active {
+    background-color: #007bff;
+    color: white;
+}

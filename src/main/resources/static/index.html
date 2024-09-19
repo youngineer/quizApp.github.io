@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main class="container">
+        <div class="sign-up">
+            <h3 class="header">Sign-Up</h3>
+            <h6 class="message hide" id="signup-message"></h6> 
+            <label for="signup-username">Username</label>
+            <input type="text" name="signup-username" id="signup-username" placeholder="Enter the username">
+        
+            <label for="signup-password">Password</label>
+            <input type="password" name="signup-password" id="signup-password" placeholder="Enter the password">
+        
+            <label for="retype-password">Confirm password</label>
+            <input type="password" name="retype-password" id="retype-password" placeholder="Confirm the password">
+            
+            <button class="btn register-btn" id="user-register">Register as User</button>
+            <button class="btn register-btn" id="admin-register">Register as Admin</button>
+        </div>
+        
+        <div class="login">
+            <h3 class="header">Login</h3>
+            <h6 class="message hide" id="login-message"></h6> 
+            <label for="login-username">Username</label>
+            <input type="text" name="login-username" id="login-username" placeholder="Enter the username">
+        
+            <label for="login-password">Password</label>
+            <input type="password" name="login-password" id="login-password" placeholder="Enter the password">
+        
+            <button class="btn login-btn" id="user-login">Login as User</button>
+            <button class="btn login-btn" id="admin-login">Login as Admin</button>
+        </div>
+        
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>

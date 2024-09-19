@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Space+Grotesk:wght@300..700&display=swap');
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    background-color: #A10035;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FF869E;
+    padding: 20px;
+    border-radius: 8px;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    width: 70%;
+    max-width: 800px;
+}
+
+.sign-up, .login {
+    flex: 1;
+    padding: 50px;
+    margin: 30px;
+    background-color: #FFC4C4;
+    border: 1px solid #A10035;
+    border-radius: 8px;
+    border-width: 2px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    background-color: #FFE7BF;
+}
+
+.btn {
+    display: inline-block;
+    width: 48%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #A10035;
+    color: #FFE7BF;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #4cae4c;
+}
+
+.message{
+    color: #A10035;
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.hide {
+    display: none;
+    
+}
+
+.login-btn{
+    
+}
+

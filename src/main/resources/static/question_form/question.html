@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Question</title>
+    <link rel="stylesheet" href="question.css">
+</head>
+<body>
+    <!-- <div class="bar login-bar">
+        <h1 class="name" id="admin-name"></h1>
+        <button class="btn logout-btn">logout</button>
+    </div> -->
+    <!-- <button id="logout">Logout</button> -->
+
+
+    <main class="container">
+        <h2 class="heading">Create Quiz</h2>
+        <!-- addtime -->
+        <!-- <h6 class="message hide" id="error-message"></h6> -->
+
+        <div class="questions">
+            <ul class="question-list">
+                <li>
+                    <form class="form" id="form-content">
+                        <!-- <label for="question-area">Enter the question:</label> -->
+                        <input type="text" class="question-area" placeholder="Enter your question here" id="question">
+                        
+                        <div class="options-container">
+                            
+                            <ul class="options-list">
+                                <li class="option-item">
+                                    <input type="text" class="option-input" placeholder="Option 1">
+                                    <button type="button" class="delete-option" onclick="deleteOption(this)">Delete</button>
+                                </li>
+    
+                                <li class="option-item">
+                                    <input type="text" class="option-input" placeholder="Option 2">
+                                    <button type="button" class="delete-option" onclick="deleteOption(this)">Delete</button>
+                                </li>
+                            </ul>
+
+                            <div class="add-option-delete-question">
+                                <button type="button" class="add-option" onclick="addOption(this)">Add Option</button>
+                            </div>
+                            
+                            <div class="answer-container">
+                                <label for="answer-input">Select the correct option:</label>
+                                <select name="answer-input" id="correct-answer">
+                                    <option value="1" class="options" id="option1">1</option>
+                                    <option value="2" class="options" id="option2">2</option>
+                                </select>
+                                <!-- <input type="text" class="answer-input" placeholder="Enter your answer here"> -->
+                            </div>
+                            
+                            <div class="add-option-delete-question">
+                                <button type="button" class="delete-question" onclick="deleteQuestion(this)">Delete Question</button>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </li>
+            </ul>
+            <button type="button" class="add-question" >Add Question</button>
+        </div>
+        <div class="time-limit-container">
+            <label for="time_limit" class="timeLimit">Enter the time limit: </label>
+            <input type="number" name="time_limit" id="time-limit" min="1" value="1">
+        </div>
+
+        <button type="button" class="submit" id="submit-quiz">Submit</button>
+    </main>
+    <script src="question.js"></script>
+</body>
+</html>
