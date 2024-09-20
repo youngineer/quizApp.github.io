@@ -118,9 +118,9 @@ async function validateLogin(username, password, role) {
             if(responseText == "Credentials verified!"){
                 console.log(role);
                 if (role === 'admin')
-                    window.location.replace(`http://127.0.0.1:5500/admin_page/admin_page.html?adminName=${encodeURIComponent(username)}`);
+                    window.location.replace(`/admin_page/admin_page.html?adminName=${encodeURIComponent(username)}`);
                 else
-                    window.location.replace(`http://127.0.0.1:5500/user_page/user_page.html?userName=${encodeURIComponent(username)}`);
+                    window.location.replace(`/user_page/user_page.html?userName=${encodeURIComponent(username)}`);
             
             return true;
         }

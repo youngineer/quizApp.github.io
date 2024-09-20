@@ -236,7 +236,7 @@ async function postQuiz(time, questions) {
         console.log(response.text);
         if (response.ok) {
             console.log(response.text);
-            window.location.replace(`http://127.0.0.1:5500/admin_page/admin_page.html?adminName=${encodeURIComponent(adminUserName)}`);
+            window.location.replace(`/admin_page/admin_page.html?adminName=${encodeURIComponent(adminUserName)}`);
                 }
         return response.ok;
     } catch (error) {
@@ -258,7 +258,7 @@ document.querySelector("#submit-quiz").addEventListener('click', async () => {
         const response = await postQuiz(time, questionList);
         alert("Quiz successfully posted!");
         console.log(response);
-        window.location.replace(`http://127.0.0.1:5500/admin_page/admin_page.html?adminName=${encodeURIComponent(adminUserName)}`);
+        window.location.replace(`/admin_page/admin_page.html?adminName=${encodeURIComponent(adminUserName)}`);
         
 
     } else {

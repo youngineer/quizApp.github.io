@@ -56,11 +56,11 @@ function displayQuestions(data) {
 }
 
 document.getElementById('dashboardBtn').addEventListener('click', () => {
-    window.location.href = `http://127.0.0.1:5500/admin_page/admin_page.html?adminName=${encodeURIComponent(adminName)}`;
+    window.location.href = `/admin_page/admin_page.html?adminName=${encodeURIComponent(adminName)}`;
 });
 
 document.getElementById('logout').addEventListener('click', () => {
-    window.location.href = 'http://127.0.0.1:5500/login_page/login.html';
+    window.location.href = '/login_page/login.html';
 });
 
 async function getQuiz(quizId) {

@@ -148,13 +148,13 @@ function reloadPage() {
 
 function handleLogoutClick(event) {
     event.preventDefault();
-    const loginRedirect = "http://127.0.0.1:5500/login_page/login.html";
+    const loginRedirect = "/login_page/login.html";
     window.location.replace(loginRedirect);
 }
 
 function handleDashboardClick(event) {
     event.preventDefault();
-    const dashboardRedirect = `http://127.0.0.1:5500/user_page/user_page.html?userName=${encodeURIComponent(username)}`;
+    const dashboardRedirect = `/user_page/user_page.html?userName=${encodeURIComponent(username)}`;
     window.location.replace(dashboardRedirect);
 }
 

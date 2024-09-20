@@ -12,7 +12,7 @@ function handleCreateQuizClick(event) {
     event.preventDefault();
     
     if (adminName) {
-        const redirectURL = `http://127.0.0.1:5500/question_form/question.html?adminName=${encodeURIComponent(adminName)}`;
+        const redirectURL = `/question_form/question.html?adminName=${encodeURIComponent(adminName)}`;
         window.location.replace(redirectURL);
     } else {
         console.error("Admin name not found in URL");
@@ -21,7 +21,7 @@ function handleCreateQuizClick(event) {
 
 function handleLogoutClick(event) {
     event.preventDefault();
-    const loginRedirect = "http://127.0.0.1:5500/login_page/login.html";
+    const loginRedirect = "/login_page/login.html";
     window.location.replace(loginRedirect);
 }
 
@@ -34,7 +34,7 @@ function loadQuizToButtons(quizList) {
         const creator = quiz[1];
         const time = quiz[2];
         const innerHtml = `
-            <a href="http://127.0.0.1:5500/quiz_details/quiz_details.html?adminName=${encodeURIComponent(adminName)}&quizId=${quizId}" class="quiz-link">
+            <a href="/quiz_details/quiz_details.html?adminName=${encodeURIComponent(adminName)}&quizId=${quizId}" class="quiz-link">
                 <button class="box" id="box${index + 1}">
                     Quiz ID: ${quizId}<br>
                     Creator: ${creator}<br>

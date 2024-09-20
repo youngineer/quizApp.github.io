@@ -2,7 +2,7 @@ const urlSearchParams = new URLSearchParams(window.location.search);
 const username = urlSearchParams.get('userName');
 
 const logoutBtn = document.getElementById("logout");
-const loginRedirect = "http://127.0.0.1:5500/login_page/login.html";
+const loginRedirect = "/login_page/login.html";
 const QUIZZES_PER_PAGE = 3;  
 let currentPage = 0; 
 
@@ -26,7 +26,7 @@ async function getAllQuizzes(page) {
             console.log(quizData);
             loadQuizToButtons(quizData.quizzes);
             setupPagination(quizData.totalItems, quizData.totalPages);
-            currentPage = quizData.currentPage;  // Update the current page
+            currentPage = quizData.currentPage;  
         } else {
             console.error("Failed to fetch quizzes:", response.statusText);
         }
@@ -54,7 +54,7 @@ function loadQuizToButtons(quizList) {
 
         if(quizScore === -1) {
             quizButtonHtml = `
-                <a href="http://127.0.0.1:5500/quiz_page/quiz_page.html?username=${username}&quizId=${quizId}" class="quiz-link">
+                <a href="/quiz_page/quiz_page.html?username=${username}&quizId=${quizId}" class="quiz-link">
                     <button class="box" id="box${index + 1}">
                         Quiz ID: ${quizId}<br />Created By: ${quizCreator}
                     </button>
