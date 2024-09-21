@@ -1,33 +1,60 @@
-HELP.md
+# Ignore Maven/Gradle specific files
 target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+build/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-
-### IntelliJ IDEA ###
-.idea
-*.iws
+# Ignore IntelliJ IDEA files
 *.iml
+.idea/
+*.iws
 *.ipr
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
-
-### VS Code ###
+# Ignore VS Code files
 .vscode/
+
+# Ignore logs
+*.log
+*.log.*
+
+# Ignore temp files
+*.tmp
+*.temp
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore compiled files
+*.class
+*.jar
+*.war
+*.ear
+
+# Ignore local environment settings
+.env
+.env.local
+*.env
+
+# Ignore database config or sensitive info (add in case you have external config files)
+*.properties
+*.yml
+*.yaml
+
+# Ignore sensitive files (like passwords, tokens)
+*.key
+*.pem
+*.crt
+
+# Ignore Postgres data files (if local databases are used)
+pgdata/
+pglogs/
+pg_xlog/
+pg_hba.conf
+
+# Ignore Node.js modules if any frontend is set up using npm
+node_modules/
+npm-debug.log
+yarn.lock
+
+# Ignore .gitignore itself
+.gitignore
+
